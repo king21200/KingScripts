@@ -51,8 +51,8 @@ public static void setRawFishId(int rawFishId) {
         	strategies = new ArrayList<Strategy>();       
         	setGuiWait(true);
         	getG().setVisible(true);
-            while (isGuiWait()) {
-                Time.sleep(100);
+        	while (isGuiWait()) {
+            	Time.sleep(100);
             }
         	strategies.add(new BankStrategy());
         	strategies.add(new WalkToRangeStrategy());
