@@ -17,7 +17,7 @@ import parabot.gui.KingCookerGUI;
 Made by: king21200
  */
 @ScriptManifest(author = "king21200", category = Category.COOKING, description = "Cooks food in Catherby, Start in bank, "
-		+ "Make sure door is open so you can access the range before starting", name = "King_Cooker", servers = {"PKHonor"}, version = 1.2)
+		+ "Make sure door is open so you can access the range before starting", name = "King_Cooker", servers = {"PKHonor"}, version = 1.3)
 public class KingCooker extends Script {
 private ArrayList<Strategy> strategies;
 public static int rawFishId;
