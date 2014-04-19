@@ -1,10 +1,8 @@
 package parabot.strategy;
-
 import org.parabot.environment.scripts.framework.Strategy;
 import org.rev317.api.methods.Camera;
 import org.rev317.api.methods.SceneObjects;
 import org.rev317.api.wrappers.scene.SceneObject;
-
 public class WalkToRangeStrategy implements Strategy {
     @Override
     public boolean activate() {

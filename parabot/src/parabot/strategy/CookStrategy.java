@@ -1,7 +1,5 @@
 package parabot.strategy;
-
 import java.awt.Point;
-
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.input.Mouse;
 import org.parabot.environment.scripts.framework.Strategy;
@@ -12,7 +10,7 @@ import org.rev317.api.wrappers.scene.SceneObject;
 public class CookStrategy implements Strategy {
     @Override
     public boolean activate() {
-    	return (Inventory.getCount(parabot.KingCooker.rawFishId) >= 1);
+    	return (Inventory.getCount(parabot.KingCooker.getRawFishId()) >= 1);
     }
 
     @Override
@@ -22,7 +20,7 @@ public class CookStrategy implements Strategy {
     	Point clickItem = new Point(700, 450);
     	Mouse.getInstance().click(clickItem);
     	range.interact("-> Range");
-    	while (Inventory.getCount(parabot.KingCooker.rawFishId) >= 1) {
+    	while (Inventory.getCount(parabot.KingCooker.getRawFishId()) >= 1) {
     		Time.sleep(500);
     	}   
     }

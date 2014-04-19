@@ -1,9 +1,7 @@
 package parabot.gui;
-
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -51,23 +49,23 @@ public class KingCookerGUI extends JFrame {
 			String chosen = fishToCook.getSelectedItem().toString();
 			switch(chosen){
 			case "Shrimp":
-				parabot.KingCooker.rawFishId = 317;
+				parabot.KingCooker.setRawFishId(317);
 				break;
 			case "Tuna":
-				parabot.KingCooker.rawFishId = 359;
+				parabot.KingCooker.setRawFishId(359);
 				break;
 			case "Lobster":
-				parabot.KingCooker.rawFishId = 377;
+				parabot.KingCooker.setRawFishId(377);
 				break;
 			case "Swordfish":
-				parabot.KingCooker.rawFishId = 371;
+				parabot.KingCooker.setRawFishId(371);
 				break;
 			case "Shark":
-				parabot.KingCooker.rawFishId = 383;
+				parabot.KingCooker.setRawFishId(383);
 				break;
 			}
-            parabot.KingCooker.guiWait = false;
-            parabot.KingCooker.g.dispose();
+            parabot.KingCooker.setGuiWait(false);
+            parabot.KingCooker.getG().dispose();
             }
 			
 		});
